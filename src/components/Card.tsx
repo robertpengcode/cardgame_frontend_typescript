@@ -1,4 +1,3 @@
-import React from 'react';
 import Tilt from 'react-parallax-tilt';
 import styles from '../styles';
 
@@ -7,7 +6,6 @@ type CardProps = {
   charImg: string;
   charName: string;
   restStyles: string;
-  //cardRef: string;
   attack: number;
   defense: number
 }

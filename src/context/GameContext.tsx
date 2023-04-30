@@ -158,8 +158,6 @@ export const GameContextProvider = ({ children }: GameContextProviderProps) => {
 
   return (
     <GameContext.Provider
-      // value={{battleGround, setBattleGround, contract, walletAddress, showAlert, setShowAlert, setErrorMessage, connectWallet, isPlayer, setIsPlayer,
-      //    convertAddress, charactersObj, updateTokens, setUpdateTokens, disableStartBTN, setDisableStartBTN}}
       value={{
         battleGround,
         setBattleGround,

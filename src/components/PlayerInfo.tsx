@@ -10,7 +10,6 @@ const marginIndexing = (index: number) => (index !== healthPoints - 1 ? 'mr-1' :
 
 type PlayerInfoProps = {
   player: string;
-  //mt: string;
   health: number;
   status: string
 }
@@ -18,7 +17,6 @@ type PlayerInfoProps = {
 const PlayerInfo = ({ player, health, status}: PlayerInfoProps) => (
 
   <div className={`${styles.flexCenter} flex-col`}>
-    {/* <div className={`${styles.flexCenter} ${mt ? 'mt-4' : 'mb-4'} flex-col`}></div> */}
 
     {status === "Won" || status === "Lost" || status === "Tied" ?
      <img src={status === "Won"? king : status === "Lost" ? dead : neutral} className="w-[50px] h-[50px]" alt="icon"/> : null
@@ -26,7 +24,6 @@ const PlayerInfo = ({ player, health, status}: PlayerInfoProps) => (
     
     <div className={styles.playerText}>{player === noOne ? "Waiting for player2..." : `Player: ${player} ${status}`}</div>
     <div
-      //data-for={`Health-${mt ? '1' : '2'}`}
       data-tip={`Health: ${health}`}
       className={styles.playerHealth}
     >

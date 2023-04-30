@@ -195,7 +195,6 @@ const CreateBattle: React.FC = () => {
     <CustomButton
           title="Mint Character (0.001 MATIC)"
           handleClick={handleMintCharacter}
-          //restStyles="mt-6"
         />
   )
 
@@ -203,15 +202,13 @@ const CreateBattle: React.FC = () => {
     <CustomButton
           title="Mint Berserk (0.0002 MATIC)"
           handleClick={()=>{handleMintTreasures(8,1)}}
-          //restStyles="mt-6"
         />
   )
 
   const mintForceShieldBTN = (
     <CustomButton
-          title="Mint Force Shield (0.002 MATIC)"
+          title="Mint Force Shield (0.0002 MATIC)"
           handleClick={()=>{handleMintTreasures(9,1)}}
-          //restStyles="mt-6"
         />
   )
 
